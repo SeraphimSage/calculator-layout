@@ -1,0 +1,83 @@
+:root {
+    box-sizing: border-box;
+
+    --darkish-gray: #494947;
+    --mediumish-gray: #676763;
+    --lightish-gray:  #8c8c8a;
+    --orangeish:  #e99b26;
+    --text: rgb(235, 235, 226);
+}
+
+#calculator {
+    width: 135px;
+    height: 180px;
+    background-color: var(--darkish-gray);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#icons {
+    color: #111;
+}
+
+#display {
+}
+
+#keypad {
+    flex-basis: 75%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#mostbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mostbuttons .button {
+    flex-basis: 32%;
+}
+#mostbuttons .doublewidth {
+    flex-basis: 65%;
+}
+
+#topbuttons {
+    background-color: var(--mediumish-gray);
+
+    flex-basis: 20%;
+
+    display: flex;
+}
+
+#digits {
+    background-color: var(--lightish-gray);
+
+    flex-basis: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#operators {
+    background-color: var(--orangeish);
+
+    flex-basis: 26%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+#operators .button {
+    flex-basis: 100%;
+}
+
+.button {
+    display: inline-block;
+    
+    border: 0.5px solid var(--darkish-gray);
+    text-align: center;
+}
